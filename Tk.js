@@ -7,12 +7,17 @@ tk = function(langFile, callback) {
 			$(xml).find('t').each(function() {
 				var selector = $(this).attr('k');
 				var trad = $(this).html();
-				if( selector[0] != '!' ) {
+
+				if( selector[0] == '!' ) {
+					var key = selector.substr(1,selector.length);
+					var selector = "[tk='"+key+"']";
+					tk[key] = trad;
+				}
+
+				if(!$(this).attr('attr')) {
 					$(selector).html(trad);
 				}else{
-					var key = selector.substr(1,selector.length);
-					tk[key] = trad;
-					$("[tk='"+key+"']").html(trad);
+					$(selector).attr($(this).attr('attr'),trad);
 				}
 			});
 			callback.call();
