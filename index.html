@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Tk is a javaScript library to create multilingual websites</title>
@@ -17,7 +17,6 @@
 <label for="choice_Language">Change language :</label>
 
 <select id="choice_Language">
-   <option value="lang/en.xml">English</option>
    <option value="lang/fr.xml">French</option>
    <option value="lang/es.xml">Spanish</option>
 </select>
@@ -25,8 +24,9 @@
 <script>
 $( document ).ready(function() {
 	$('#choice_Language').change(function(){
-		Tk($(this).val());
-		alert(Tk.alertChangeLanguage);
+		Tk($(this).val(), function() {
+			alert(Tk.alertChangeLanguage);
+		});
 	})
 });
 </script>

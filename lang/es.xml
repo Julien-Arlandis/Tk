@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translation>
+<t k="!blockText">Aquí es un simple ejemplo de la utilización de los conocimientos tradicionales</t>
+<t k="#url_repos">URL del proyecto</t>
+<t k="#url_repos" attr="title">Este texto requiere traducción</t>
+<t k="label[for='choice_Language']">Selección de idiomas</t>
+<t k="#choice_Language > option[value='en']">Inglés</t>
+<t k="#choice_Language > option[value='fr']">francés</t>
+<t k="#choice_Language > option[value='es']">español</t>
+<t k="!alertChangeLanguage">La página ha sido traducida</t>
+</translation>
