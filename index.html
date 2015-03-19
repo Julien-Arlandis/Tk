@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Tk is a javaScript library to create multilingual websites</title>
+	<script src="tk.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+
+<p tk="blockText">This is a simple example of Tk utilisation</p>
+<a href="" alt="This text needs a traduction" id="url_repos"> URL of the project </a>
+
+
+<label for="choice_Language">Change language :</label>
+<input list="bieres" type="text" id="choix_bieres">
+
+<select id="choice_Language">
+   <option value="en" tk="1">English</option> 
+   <option value="fr" tk="2">French</option> 
+   <option value="es" tk="3">Spanish</option> 
+</select>
+
+</body>
+</html>
