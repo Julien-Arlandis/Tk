@@ -1,4 +1,4 @@
-Tk = function(langFile, callback) {
+tk = function(langFile, callback) {
 	$.ajax({
 		type: "GET",
 		url: langFile,
@@ -11,7 +11,7 @@ Tk = function(langFile, callback) {
 					$(selector).html(trad);
 				}else{
 					var key = selector.substr(1,selector.length);
-					Tk[key] = trad;
+					tk[key] = trad;
 					$("[tk='"+key+"']").html(trad);
 				}
 			});
