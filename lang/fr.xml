@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translation>
+<t k="!blockText">Voici une simple illustration de l'utilisation de Tk</t>
+<t k="#url_repos">URL du projet</t>
+<t k="#url_repos" attr="title">Ce texte nécessite une traduction</t>
+<t k="label[for='choice_Language']">Choix de la langue</t>
+<t k="#choice_Language > option[value='en']">Anglais</t>
+<t k="#choice_Language > option[value='fr']">Français</t>
+<t k="#choice_Language > option[value='es']">Espagnol</t>
+<t k="!alertChangeLanguage">La page a été traduite</t>
+</translation>
